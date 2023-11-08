@@ -5,7 +5,7 @@ const multer = require('multer');
 const pdf = require('pdf-parse-fork');
 const fs = require('fs');
 const app = express();
-const port = 3045;
+const port = 3001;
 
 // Set up Multer for file uploads
 
