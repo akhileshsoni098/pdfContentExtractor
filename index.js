@@ -4,11 +4,12 @@ const express = require('express');
 const multer = require('multer');
 const pdf = require('pdf-parse-fork');
 const fs = require('fs');
+const cors = require("cors")
 const app = express();
 const port = 3001;
 
+app.use(cors());
 // Set up Multer for file uploads
-
 const storage = multer.memoryStorage();
 const upload = multer({ storage });
 
