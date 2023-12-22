@@ -36,7 +36,6 @@ app.post('/upload', upload.single('pdf'), async (req, res) => {
     const extractedText = data.text;
 
     res.send(`
-      <h2>PDF Content:</h2>
       <pre>${extractedText}</pre>
     `);
   } catch (error) {
